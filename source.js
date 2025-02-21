@@ -8,14 +8,16 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-  let choice = prompt(
-    `Your choice: ${ROCK}, ${PAPER}, ${SCISSORS}`,
-  ).toLowerCase();
+  let choice = prompt(`Your choice: ${ROCK}, ${PAPER}, ${SCISSORS}`)
+    .trim()
+    .toLowerCase();
 
   while (!checkValidUserChoice(choice)) {
     choice = prompt(
       `Please try only these options: ${ROCK}, ${PAPER}, ${SCISSORS}`,
-    ).toLowerCase();
+    )
+      .trim()
+      .toLowerCase();
   }
 
   return choice;
