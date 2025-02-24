@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+}
+
+label div {
+  padding: 10px;
+}
+
+ul.options {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+section.board {
+  height: 250px;
+  width: 250px;
+  background-color: #ffdadb;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+section.player-choice {
+  margin: 20px;
+}
+
+section.final-result {
+  margin-top: 20px;
+  color: red;
+}
